@@ -45,6 +45,10 @@ body.dark footer {
   color: #ccc;
 }
 
+body.dark #morceaux a {
+  color: #ffffff;
+}
+
 /* ================== HEADER ================== */
 header {
   background-color: #2e2e2e;
@@ -287,3 +291,4 @@ footer {
 .guitare-notion a:hover {
   text-decoration: underline;
 }
+
