@@ -24,16 +24,8 @@ body.dark {
   background-color: #202020;
 }
 
-body.dark #hero {
-  background-color: #2c2c2c;
-  color: #ffffff;
-}
-
-body.dark #contact {
-  background-color: #2c2c2c;
-  color: #ffffff;
-}
-
+body.dark #hero,
+body.dark #contact,
 body.dark header,
 body.dark section,
 body.dark .skill-card {
@@ -43,21 +35,15 @@ body.dark .skill-card {
 
 body.dark #contact a,
 body.dark .social-links i,
-body.dark .social-links a {
+body.dark .social-links a,
+body.dark #programme a {
   color: #ffffff;
 }
-
-body.dark #programme a {
-  color: #ffffff; /* blanc → lisible sur fond sombre */
-}
-
 
 body.dark footer {
   background-color: #111;
   color: #ccc;
 }
-
-
 
 /* ================== HEADER ================== */
 header {
@@ -100,7 +86,7 @@ nav a:hover {
   font-size: 1.2rem;
 }
 
-/* ================== ABOUT / PARCOURS / COMPETENCES ================== */
+/* ================== SECTIONS GÉNÉRALES ================== */
 section {
   background-color: white;
   padding: 40px 20px;
@@ -151,7 +137,7 @@ body.dark .click-info {
   cursor: pointer;
 }
 
-/* ================== COMPETENCES ================== */
+/* ================== COMPÉTENCES ================== */
 .skills-list {
   display: flex;
   flex-wrap: wrap;
@@ -170,16 +156,11 @@ body.dark .click-info {
   transition: background-color 1s ease, color 1s ease;
 }
 
-body.dark .skill-card {
-  background-color: #2c2c2c;
-}
-
 /* ================== CONTACT ================== */
 #contact {
   text-align: center;
   background-color: #535353;
   color: white;
-
 }
 
 #contact a {
@@ -228,42 +209,30 @@ footer {
   transform: scale(1.1);
 }
 
-/* ================== BOUTON THEME ================== */
-.theme-btn {
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  padding: 6px 10px;
-  background: rgba(36,36,36,0.35);
-  border: 1px solid #575757;
-  border-radius: 8px;
-  font-size: 1.1rem;
-  cursor: pointer;
-  backdrop-filter: blur(4px);
-  transition: background 0.3s, transform 0.3s;
-}
-
-.theme-btn:hover {
-  background: rgba(0,0,0,0.2);
-  transform: scale(1.05);
-}
-
-/* ================== STRAVA ================== */
-
+/* ================== BOUTONS THEME ET STRAVA ================== */
+.theme-btn,
 #stravaBtn {
   position: absolute;
-  top: 70px; /* Décalage pour qu'il ne soit pas sur le bouton dark mode */
   right: 20px;
+  padding: 6px 10px;
   background: rgba(36,36,36,0.35);
   border: 1px solid #575757;
   border-radius: 8px;
   font-size: 1.1rem;
   cursor: pointer;
-  padding: 6px 10px;
   backdrop-filter: blur(4px);
   transition: transform 0.3s, background 0.3s;
 }
 
+.theme-btn {
+  top: 20px;
+}
+
+#stravaBtn {
+  top: 70px; /* décale sous le bouton dark mode */
+}
+
+.theme-btn:hover,
 #stravaBtn:hover {
   background: rgba(0,0,0,0.2);
   transform: scale(1.05);
@@ -279,27 +248,15 @@ footer {
 #programme a:hover {
   text-decoration: underline;
 }
+
 /* ================== PIANO ================== */
-/* Espace entre les paragraphes du parcours piano */
-#piano p {
-  margin-bottom: 15px; /* augmente ou diminue selon ton goût */
-}
+#piano p { margin-bottom: 15px; }
+#piano h2 { margin-bottom: 15px; }
+#morceaux h3 { margin-top: 15px; }
 
-/* Espace entre les catégories de morceaux */
-#morceaux h3 {
-  margin-top: 15px; /* espace avant chaque catégorie */
-}
-
-/* Espace entre le titre du parcours et les paragraphes */
-#piano h2 {
-  margin-bottom: 15px; /* espace après le titre */
-}
-
-
-/* Lien vers Notion piano — style identique aux liens du programme muscu */
 .piano-notion {
-  margin-top: 20px; /* espace au-dessus du lien */
-  text-align: center; /* si tu veux centrer comme les autres sections */
+  margin-top: 20px;
+  text-align: center;
 }
 
 .piano-notion a {
@@ -313,28 +270,11 @@ footer {
 }
 
 /* ================== GUITARE ================== */
-/* Espace entre les paragraphes du parcours guitare */
-#guitare p {
-  margin-bottom: 10px; /* réduit l'espace entre les paragraphes */
-}
-
-#guitare p:last-of-type {
-  margin-bottom: 5px; /* ou 0 pour quasi pas d'espace */
-}
-
-/* Espace entre les catégories de morceaux */
-#guitare-morceaux h3 {
-  margin-top: 10px; /* réduit l'espace avant chaque catégorie */
-}
-
-/* Espace entre le titre du parcours et les paragraphes */
-#guitare h2 {
-  margin-bottom: 10px; /* réduit l'espace après le titre */
-}
-
-/* Lien vers Notion guitare */
+#guitare p { margin-bottom: 10px; }
+#guitare p:last-of-type { margin-bottom: 5px; }
+#guitare h2 { margin-bottom: 10px; }
 .guitare-notion {
-  margin-top: 15px; /* espace au-dessus du lien */
+  margin-top: 15px;
   text-align: center;
 }
 
