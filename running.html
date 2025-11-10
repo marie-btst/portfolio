@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+  <title>Course à pied — Marie Battiston</title>
+</head>
+
+<body>
+
+  <!-- Bouton Thème sombre -->
+  <button id="themeToggle" class="theme-btn">🌗</button>
+
+  <!-- Bouton Strava flottant -->
+  <button id="stravaBtn" class="theme-btn">🏃‍♀️</button>
+
+  <!-- Header -->
+  <header>
+    <h1>Course à pied</h1>
+    <nav>
+      <a href="index.html">Accueil</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- Section Parcours Course -->
+    <section id="parcours">
+      <h2>🏃‍♀️ Mon parcours en course à pied</h2>
+      <p>Je suis une débutante, j'ai couru mon premier 5 km en août 2025.</p>
+      <p>J'essaye de courir environ une fois par semaine.</p>
+      <p>Je ne cherche pas à performer, simplement à prendre du plaisir et à me changer les idées.</p>
+    </section>
+
+    <!-- Section Performances -->
+    <section id="performances">
+      <h2>📈 Mes performances</h2>
+      <h3>(pas réellement représentatives)</h3>
+      <p>5 km en 33 min</p>
+      <p>10 km en 1h03</p>
+      <p>Je ne me fixe pas d'objectifs de temps, mais seulement de régularité.</p>
+    </section>
+
+    <!-- Section Strava -->
+    <section id="performances">
+      <h2>📱 Mon strava</h2>
+      <p>Tu peux cliquer sur le bouton 🏃‍♀️ en haut à droite pour accéder à mon <b>profil Strava</b></p>
+      <p>et voir mes <b>performances</b> récentes plus en détail.</p>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Marie Battiston — Tous droits réservés</p>
+  </footer>
+
+  <!-- Bouton scroll top -->
+  <button id="scrollTopBtn" title="Remonter en haut">↑</button>
+
+  <!-- Script JS -->
+  <script src="script.js"></script>
+  <script>
+    // Bouton Strava flottant
+    const stravaBtn = document.getElementById("stravaBtn");
+    stravaBtn.addEventListener("click", () => {
+      window.open("https://www.strava.com/athletes/154194099", "_blank");
+    });
+  </script>
+</body>
+</html>
