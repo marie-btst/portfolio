@@ -62,10 +62,10 @@ function animateText(selector, speed = 200) {
 animateText('header h1', 180);
 
 // ================== APPARITION AU SCROLL ==================
-const faders = document.querySelectorAll('#about, #contact');
+const faders = document.querySelectorAll('section, header, footer');
 
 const appearOptions = {
-  threshold: 0.4,
+  threshold: 0.6,
   rootMargin: "0px 0px -50px 0px"
 };
 
@@ -104,3 +104,4 @@ if (stravaBtn) {
     window.open("https://www.strava.com/athletes/tonprofil", "_blank");
   });
 }
+
