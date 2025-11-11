@@ -196,7 +196,7 @@ footer {
   position: fixed;
   bottom: 30px;
   right: 30px;
-  background-color: #202672;
+  background-color: #0051ff;
   color: white;
   border: none;
   border-radius: 50%;
@@ -209,7 +209,7 @@ footer {
 }
 
 #scrollTopBtn:hover {
-  background-color: #818181;
+  background-color: #568bff;
   transform: scale(1.1);
 }
 
