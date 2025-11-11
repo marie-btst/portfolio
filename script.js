@@ -104,3 +104,27 @@ if (stravaBtn) {
     window.open("https://www.strava.com/athletes/tonprofil", "_blank");
   });
 }
+
+// ================== ACCORDÉON ==================
+document.addEventListener("DOMContentLoaded", () => {
+  const accordionBtns = document.querySelectorAll(".accordion-btn");
+
+  accordionBtns.forEach(btn => {
+    btn.addEventListener("click", () => {
+      const content = btn.nextElementSibling;
+      const isActive = content.classList.contains("active");
+
+      // Fermer tous les autres accordéons
+      document.querySelectorAll(".accordion-content.active").forEach(openContent => {
+        openContent.classList.remove("active");
+        openContent.previousElementSibling.classList.remove("active");
+      });
+
+      // Ouvrir/fermer l'accordéon cliqué
+      if (!isActive) {
+        content.classList.add("active");
+        btn.classList.add("active");
+      }
+    });
+  });
+});
