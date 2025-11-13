@@ -101,7 +101,7 @@ window.addEventListener("load", () => {
 const stravaBtn = document.getElementById("stravaBtn");
 if (stravaBtn) {
   stravaBtn.addEventListener("click", () => {
-    window.open("https://www.strava.com/athletes/tonprofil", "_blank");
+    window.open("https://www.strava.com/athletes/154194099", "_blank");
   });
 }
 
